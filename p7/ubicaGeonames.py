@@ -1,7 +1,7 @@
 import requests
 
-def obtener_informacion_ubicacion(geonames_username, lugar):
-    url = f"http://api.geonames.org/searchJSON?name={lugar}&maxRows=1&username={geonames_username}"
+def obtener_informacion_ubicacion(geonames_lalo45, México):
+    url = f"http://api.geonames.org/searchJSON?name={México}&maxRows=1&username={geonames_lalo}"
 
     try:
         response = requests.get(url)
@@ -18,7 +18,7 @@ def obtener_informacion_ubicacion(geonames_username, lugar):
 
 if __name__ == "__main__":
     #Coloca tu usuario de geonames
-    geonames_username = "migfel"
+    geonames_username = "lalo45"
 
     lugar = "México"  # Cambia esto a la ubicación que desees consultar
-    obtener_informacion_ubicacion(geonames_username, lugar)
+    obtener_informacion_ubicacion(geonames_lalo45, México)
