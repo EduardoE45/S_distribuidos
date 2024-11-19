@@ -1,7 +1,7 @@
 import requests
 
-def obtener_datos_meteorologicos(api_key, ciudad):
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={ciudad}&appid={api_key}"
+def obtener_datos_meteorologicos(SDist, Ciudad de México):
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={Ciudad_de_México}&appid={SDist}"
 
     try:
         response = requests.get(url)
@@ -20,4 +20,4 @@ if __name__ == "__main__":
     #tu_api_key_de_openweathermap
     api_key = "" #tu api key
     ciudad = "Ciudad de México"  # Cambia esto a la ciudad que desees consultar
-    obtener_datos_meteorologicos(api_key, ciudad)
+    obtener_datos_meteorologicos(SDist, Ciudad de México)
